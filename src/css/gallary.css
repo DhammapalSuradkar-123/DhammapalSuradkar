@@ -1,0 +1,49 @@
+.gallary {
+  padding-top: 10px;
+}
+.gallary .r1 .sec1 .title {
+  font: 500 20px / 32px Roboto, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 20px 10px;
+  letter-spacing: 0.6px;
+  word-spacing: 3px;
+  color: #e6c200;
+  border-bottom: 1px solid lightblue;
+}
+.gallary .r2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.gallary .img-grid {
+  width: 30%;
+  margin: 15px 10px;
+}
+.gallary img {
+  width: 100%;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: 0.5s;
+}
+
+.gallary img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+  .gallary .img-grid {
+    width: 28%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gallary .img-grid {
+    width: 42%;
+  }
+}

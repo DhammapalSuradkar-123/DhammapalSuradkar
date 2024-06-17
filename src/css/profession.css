@@ -1,0 +1,166 @@
+.profession .pc1,
+.profession .pc2 {
+  padding: 0 15px 15px;
+}
+.profession .pc1 .pro-sec1 {
+  display: flex;
+  width: 100%;
+  padding: 10px 20px;
+  background: lightcyan;
+}
+.profession .pc1 .pro-sec1 .pro-about {
+  width: 80%;
+  padding-left: 10px;
+  padding-right: 18px;
+}
+.profession .pc1 .pro-sec1 .pro-about h3,
+.profession .pc1 .pro-sec2 h3 {
+  font: 550 24px/32px Roboto, Helvetica Neue, sans-serif;
+  color: #333;
+}
+.profession .pc1 .pro-sec1 .pro-about .summary p {
+  text-align: justify;
+}
+.profession .pc1 .pro-sec1 .pro-about p,
+.profession .pc1 .pro-sec2 p {
+  font-family: unset;
+  text-indent: 43px;
+  color: #333;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+  word-spacing: 3px;
+}
+
+.profession .pc1 .pro-sec1 .pro-about .education {
+  margin-bottom: 20px;
+}
+.profession .pc1 .pro-sec1 .pro-about .education h3,
+.profession .pc1 .pro-sec2 h3 {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+.profession .pc1 .pro-sec1 .pro-about .education p,
+.profession .pc1 .pro-sec2 p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+.profession .pc1 .pro-sec1 .pro-about .education p {
+  margin-bottom: 15px;
+}
+.profession .pc1 .pro-sec1 .pro-img {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.profession .pc1 .pro-sec1 .pro-img img {
+  width: 100%;
+  border-radius: 6px;
+}
+.profession .pc1 .pro-sec2 {
+  background: lightcyan;
+  padding: 15px 26px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.profession .pc1 .pro-sec2 p {
+  margin: 20px 0;
+}
+.profession .pc1 .pro-sec2 p span {
+  background: lightgreen;
+  padding: 2px 10px;
+  border-radius: 15px;
+  margin: 5px;
+  word-break: break-word;
+}
+.profession .pc2 .experience {
+  background: aliceblue;
+  padding: 20px;
+}
+.profession .pc2 .resume {
+  display: flex;
+  justify-content: center;
+}
+.profession .pc2 .resume img {
+  width: 70%;
+  border: 1px solid #333;
+}
+.profession .pc2 .btn {
+  text-align: center;
+  padding: 25px 0;
+}
+.profession .res {
+  padding-bottom: 15px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+  .profession .pc1 .pro-sec1 .pro-about p,
+  .profession .pc1 .pro-sec2 p {
+    text-indent: 0;
+  }
+  .profession .pc1 .skills strong {
+    display: inline-block;
+    margin: 10px 0;
+  }
+  .profession .pc1 .pro-sec2 p span {
+    display: inline-block;
+  }
+  .accordion-comp .company-info .details {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .profession .pc2 .resume img {
+    width: 90%;
+  }
+  .profession .res {
+    padding-bottom: 0;
+  }
+  .profession .pc1 .pro-sec1 {
+    flex-direction: column;
+  }
+  .profession .pc1 .pro-sec1 .pro-about {
+    width: 100%;
+  }
+  .profession .pc1 .pro-sec1 .pro-img {
+    display: none;
+  }
+  .accordion-comp .company-info .details {
+    padding-left: 0;
+  }
+  .accordion-comp .company-info .details .det strong {
+    width: 40%;
+  }
+  .accordion-comp .company-info .details .det {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .accordion-comp .company-info {
+    flex-direction: column;
+  }
+  .accordion-comp .company-info .details {
+    width: 100%;
+  }
+  .accordion-comp .company-info .details .det {
+    margin: 12px 0;
+  }
+  .accordion-comp .company-info .logo {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profession .pc1 .pro-sec1 .pro-about {
+    border-bottom: 1px solid #888;
+    margin-bottom: 20px;
+  }
+  .profession .pc1 .pro-sec1 .pro-img {
+    display: block;
+    width: 80%;
+    margin: 0 auto 10px;
+  }
+}

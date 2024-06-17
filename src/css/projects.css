@@ -1,0 +1,84 @@
+.projects {
+  padding-top: 10px;
+}
+.projects .r1 .sec1 .title {
+  font: 500 20px / 32px Roboto, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 20px 10px;
+  letter-spacing: 0.6px;
+  word-spacing: 3px;
+  color: #e6c200;
+  border-bottom: 1px solid lightblue;
+}
+.projects .r2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* project card */
+.p-card {
+  background: linear-gradient(
+    138deg,
+    rgb(32, 201, 255) 36.7%,
+    rgb(0, 8, 187) 84.4%,
+    rgb(255, 255, 255) 119.7%
+  );
+  padding: 10px;
+  margin: 5px;
+  width: 32%;
+  border-radius: 12px;
+  min-height: 225px;
+}
+.p-card .wrapper {
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+}
+.p-card .wrapper h2 {
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+.p-card .wrapper p {
+  color: white;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-size: 15px;
+}
+.p-card .card .btn {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.p-card .card .btn .btn1 {
+  border-radius: 40px !important;
+  padding: 5px 15px;
+  transition: 0.5s;
+}
+.p-card .card .btn .btn1:hover {
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+  .p-card {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .p-card {
+    width: 100%;
+  }
+}
