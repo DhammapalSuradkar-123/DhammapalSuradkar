@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DhammapalSuradkar/static/css/main.08414919.css",
-    "main.js": "/DhammapalSuradkar/static/js/main.94652bae.js",
+    "main.js": "/DhammapalSuradkar/static/js/main.51fd3fc5.js",
     "static/js/453.6a2b70d3.chunk.js": "/DhammapalSuradkar/static/js/453.6a2b70d3.chunk.js",
     "static/media/img1.jpg": "/DhammapalSuradkar/static/media/img1.892b7fc5f446299283c2.jpg",
     "static/media/meta_cert.jpg": "/DhammapalSuradkar/static/media/meta_cert.0846d83195c729f748dc.jpg",
@@ -31,11 +31,11 @@
     "static/media/microsoft-logo.png": "/DhammapalSuradkar/static/media/microsoft-logo.2c49ce279d8f799521ad.png",
     "index.html": "/DhammapalSuradkar/index.html",
     "main.08414919.css.map": "/DhammapalSuradkar/static/css/main.08414919.css.map",
-    "main.94652bae.js.map": "/DhammapalSuradkar/static/js/main.94652bae.js.map",
+    "main.51fd3fc5.js.map": "/DhammapalSuradkar/static/js/main.51fd3fc5.js.map",
     "453.6a2b70d3.chunk.js.map": "/DhammapalSuradkar/static/js/453.6a2b70d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08414919.css",
-    "static/js/main.94652bae.js"
+    "static/js/main.51fd3fc5.js"
   ]
 }
