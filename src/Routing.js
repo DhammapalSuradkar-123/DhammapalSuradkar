@@ -6,6 +6,7 @@ import Profession from "./pages/Profession";
 import Projects from "./pages/Projects";
 import Certificates from "./pages/Certificates";
 import Resume from "./pages/Resume";
+import PageNotFound from "./pages/PageNotFound";
 
 const Routing = () => {
   return (
@@ -14,11 +15,13 @@ const Routing = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="/DhammapalSuradkar" element={<Home />} />
             <Route path="/profession" element={<Profession />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/certificates" element={<Certificates />} />
           </Route>
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </>
