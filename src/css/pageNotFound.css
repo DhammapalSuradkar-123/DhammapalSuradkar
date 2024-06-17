@@ -1,0 +1,18 @@
+.pageNotFound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #c2deef;
+  overflow: hidden;
+}
+.pageNotFound img {
+  width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  .pageNotFound .pnf {
+    margin-top: 200px;
+  }
+}
