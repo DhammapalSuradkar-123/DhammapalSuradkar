@@ -1,17 +1,17 @@
+import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../comps/Navbar";
-import "../comps/compsStyle.css";
 import Footer from "./Footer";
 
 const Layout = () => {
   return (
-    <>
+    <div className="app-layout">
       <Navbar />
-      <div id="blank-content">
+      <main style={{ flex: 1 }}>
         <Outlet />
-      </div>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

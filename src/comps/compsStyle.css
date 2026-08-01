@@ -1,10 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Mada:400,500");
-
-body {
-  font-family: "Mada", sans-serif;
-  margin: 220px 0px 50px;
-  background-color: #dff2fa;
-}
+/* Accordion & Component specific styles */
 
 #blank-content {
   width: 90%;
