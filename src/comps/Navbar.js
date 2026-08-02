@@ -3,7 +3,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import DownloadIcon from "@mui/icons-material/Download";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import resumePdf from "../IMG/Dhammapal Suradkar.pdf";
+import resumePdf from "../IMG/Dhammapal_Suradkar_React_FullStack_Developer_Resume.pdf";
+import logo from "../IMG/logo.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -21,7 +22,15 @@ const Navbar = () => {
       }
 
       // Section scrollSpy logic
-      const sections = ["home", "about", "skills", "projects", "experience", "certificates", "contact"];
+      const sections = [
+        "home",
+        "about",
+        "experience",
+        "skills",
+        "projects",
+        "certificates-preview",
+        "contact",
+      ];
       const scrollPosition = window.scrollY + 200;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -56,7 +65,7 @@ const Navbar = () => {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href = resumePdf;
-    link.download = "Dhammapal Suradkar Resume.pdf";
+    link.download = "Dhammapal_Suradkar_React_FullStack_Developer_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -65,10 +74,10 @@ const Navbar = () => {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
+    { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
-    { id: "experience", label: "Experience" },
-    { id: "certificates", label: "Certificates" },
+    { id: "certificates-preview", label: "Certificates" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -76,7 +85,9 @@ const Navbar = () => {
     <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
       <div className="header-wrapper">
         <div className="logo-container" onClick={() => handleNavClick("home")}>
-          <div className="logo-avatar">DS</div>
+          <div className="logo-avatar">
+            <img src={logo} alt="logo" />
+          </div>
           <span className="logo-text">Dhammapal Suradkar</span>
         </div>
 

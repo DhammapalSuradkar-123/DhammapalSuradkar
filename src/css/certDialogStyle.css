@@ -1,0 +1,36 @@
+#certDialogClose {
+  background: #f1f5f9;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid lightgray;
+}
+
+#certDialogClose:hover {
+  background-color: #f54927;
+  color: white;
+}
+
+#certDialogBack {
+  background: #f1f5f9;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 18px;
+  transition: 0.5s;
+  border: 1px solid lightgray;
+}
+
+#certDialogBack:hover {
+  background-color: #27bef5;
+  color: white;
+}
