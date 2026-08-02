@@ -1,14 +1,14 @@
 import myResume from "../IMG/Dhammapal Suradkar.png";
 import Button from "@mui/material/Button";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
-import resume from "../IMG/Dhammapal Suradkar.pdf";
+import resume from "../IMG/Dhammapal_Suradkar_React_FullStack_Developer_Resume.pdf";
 
 const Resume = () => {
   // download resume
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "Dhammapal Suradkar Resume.pdf";
+    link.download = "Dhammapal_Suradkar_React_FullStack_Developer_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
