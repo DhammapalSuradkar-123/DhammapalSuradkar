@@ -4,6 +4,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import resumePdf from "../IMG/Dhammapal_Suradkar_React_FullStack_Developer_Resume.pdf";
+import logo from "../IMG/logo.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
         "experience",
         "skills",
         "projects",
-        "certificates",
+        "certificates-preview",
         "contact",
       ];
       const scrollPosition = window.scrollY + 200;
@@ -76,7 +77,7 @@ const Navbar = () => {
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
-    { id: "certificates", label: "Certificates" },
+    { id: "certificates-preview", label: "Certificates" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -84,7 +85,9 @@ const Navbar = () => {
     <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
       <div className="header-wrapper">
         <div className="logo-container" onClick={() => handleNavClick("home")}>
-          <div className="logo-avatar">DS</div>
+          <div className="logo-avatar">
+            <img src={logo} alt="logo" />
+          </div>
           <span className="logo-text">Dhammapal Suradkar</span>
         </div>
 

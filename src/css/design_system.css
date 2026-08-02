@@ -113,18 +113,12 @@ body {
 }
 
 .logo-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--primary);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 15px;
-  letter-spacing: -0.5px;
-  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+  width: 50px;
+  height: 50px;
+}
+
+.logo-avatar img {
+  width: 100%;
 }
 
 .logo-text {

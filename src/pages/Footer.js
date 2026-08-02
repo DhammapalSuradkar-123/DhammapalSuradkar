@@ -13,8 +13,10 @@ const Footer = () => {
       <footer className="footer-bar">
         <div className="footer-contacts">
           <div className="footer-contact-item">
-            <LocationOnOutlinedIcon style={{ fontSize: 18, color: "#475569" }} />
-            <span>Pune, Maharashtra, India</span>
+            <LocationOnOutlinedIcon
+              style={{ fontSize: 18, color: "#475569" }}
+            />
+            <span>Buldhana, Maharashtra, India</span>
           </div>
           <a
             href="mailto:dsuradkar111@gmail.com"
@@ -29,7 +31,9 @@ const Footer = () => {
             className="footer-contact-item"
             style={{ textDecoration: "none" }}
           >
-            <LocalPhoneOutlinedIcon style={{ fontSize: 18, color: "#475569" }} />
+            <LocalPhoneOutlinedIcon
+              style={{ fontSize: 18, color: "#475569" }}
+            />
             <span>+91 9657531971</span>
           </a>
         </div>
