@@ -10,6 +10,7 @@ import virtusaLogo from "../IMG/Virtusa-Logo.png";
 import credentekLogo from "../IMG/credentek_logo1.jpg";
 import commercePunditLogo from "../IMG/commercePunditLogo.png";
 import CertificationsGrid from "../comps/CertificationsGrid";
+import "../css/certDialogStyle.css";
 
 // Certificate Gallery Images
 import img1 from "../IMG/Certificates/meta_cert.jpg";
@@ -25,6 +26,7 @@ import img9 from "../IMG/Certificates/cert7.png";
 const Home = () => {
   const [selectedCert, setSelectedCert] = useState(null);
   const [showAllCertsModal, setShowAllCertsModal] = useState(false);
+  const [certTitle, setCertTitle] = useState("All Certificates & Credentials");
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
@@ -122,13 +124,13 @@ const Home = () => {
   const allCerts = [
     { img: img1, title: "Meta Front-End Developer Professional" },
     { img: img2, title: "Oracle Certified Associate, Java SE 8 Programmer" },
-    { img: img3, title: "Full Stack Development Certificate" },
-    { img: img4, title: "Microsoft Virtual Internship Certificate" },
-    { img: img5, title: "Python Programming Certification" },
-    { img: img6, title: "Web Development Certification" },
-    { img: img7, title: "React Developer Certification" },
-    { img: img8, title: "Java Programming Badge" },
-    { img: img9, title: "Software Engineering Certification" },
+    { img: img3, title: "Python Data Science Certification" },
+    { img: img4, title: "Microsoft Virtual Internship Certification" },
+    { img: img5, title: "TATA Imagination challenge Certification" },
+    { img: img6, title: "HTML5 & CSS3 Certification" },
+    { img: img7, title: "Python Programming Certification" },
+    { img: img8, title: "C/C++ Quiz Certification" },
+    { img: img9, title: "Compiler Quiz Certification" },
   ];
 
   return (
@@ -563,10 +565,6 @@ const Home = () => {
               justifyContent: "center",
               padding: "24px",
             }}
-            onClick={() => {
-              setShowAllCertsModal(false);
-              setSelectedCert(null);
-            }}
           >
             <div
               style={{
@@ -596,26 +594,33 @@ const Home = () => {
                     color: "#0f172a",
                   }}
                 >
-                  All Certificates & Credentials
+                  {certTitle}
                 </h3>
-                <button
-                  onClick={() => {
-                    setShowAllCertsModal(false);
-                    setSelectedCert(null);
-                  }}
-                  style={{
-                    background: "#f1f5f9",
-                    border: "none",
-                    borderRadius: "50%",
-                    width: "36px",
-                    height: "36px",
-                    fontSize: "18px",
-                    fontWeight: "bold",
-                    cursor: "pointer",
-                  }}
-                >
-                  ✕
-                </button>
+
+                <div>
+                  {selectedCert && (
+                    <button
+                      onClick={() => {
+                        setCertTitle("All Certificates & Credentials");
+                        setSelectedCert(null);
+                      }}
+                      id="certDialogBack"
+                    >
+                      ↩
+                    </button>
+                  )}
+
+                  <button
+                    onClick={() => {
+                      setShowAllCertsModal(false);
+                      setSelectedCert(null);
+                      setCertTitle("All Certificates & Credentials");
+                    }}
+                    id="certDialogClose"
+                  >
+                    ✕
+                  </button>
+                </div>
               </div>
 
               {selectedCert ? (
@@ -629,22 +634,6 @@ const Home = () => {
                       boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
                     }}
                   />
-                  <p
-                    style={{
-                      marginTop: "16px",
-                      fontWeight: "600",
-                      color: "#334155",
-                    }}
-                  >
-                    {selectedCert.title}
-                  </p>
-                  <button
-                    onClick={() => setSelectedCert(null)}
-                    className="btn-primary-action"
-                    style={{ marginTop: "16px" }}
-                  >
-                    Back to All Certificates
-                  </button>
                 </div>
               ) : (
                 <div
@@ -665,7 +654,10 @@ const Home = () => {
                         cursor: "pointer",
                         transition: "transform 0.2s",
                       }}
-                      onClick={() => setSelectedCert(cert)}
+                      onClick={() => {
+                        setCertTitle(cert.title);
+                        setSelectedCert(cert);
+                      }}
                     >
                       <img
                         src={cert.img}
