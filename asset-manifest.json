@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DhammapalSuradkar/static/css/main.563c98a7.css",
-    "main.js": "/DhammapalSuradkar/static/js/main.c3f7b081.js",
+    "main.css": "/DhammapalSuradkar/static/css/main.9337c093.css",
+    "main.js": "/DhammapalSuradkar/static/js/main.8160c54d.js",
     "static/js/453.6a2b70d3.chunk.js": "/DhammapalSuradkar/static/js/453.6a2b70d3.chunk.js",
     "static/media/logo.png": "/DhammapalSuradkar/static/media/logo.e501e4e2a5e031681812.png",
     "static/media/meta.png": "/DhammapalSuradkar/static/media/meta.9421253b292740c7effb.png",
@@ -18,12 +18,12 @@
     "static/media/404-page.png": "/DhammapalSuradkar/static/media/404-page.5e5bc3363c5b2deac497.png",
     "static/media/my_photo.JPG": "/DhammapalSuradkar/static/media/my_photo.2c8babbd314b9e48ffb1.JPG",
     "index.html": "/DhammapalSuradkar/index.html",
-    "main.563c98a7.css.map": "/DhammapalSuradkar/static/css/main.563c98a7.css.map",
-    "main.c3f7b081.js.map": "/DhammapalSuradkar/static/js/main.c3f7b081.js.map",
+    "main.9337c093.css.map": "/DhammapalSuradkar/static/css/main.9337c093.css.map",
+    "main.8160c54d.js.map": "/DhammapalSuradkar/static/js/main.8160c54d.js.map",
     "453.6a2b70d3.chunk.js.map": "/DhammapalSuradkar/static/js/453.6a2b70d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.563c98a7.css",
-    "static/js/main.c3f7b081.js"
+    "static/css/main.9337c093.css",
+    "static/js/main.8160c54d.js"
   ]
 }
