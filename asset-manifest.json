@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9337c093.css",
-    "main.js": "/portfolio/static/js/main.8c656ea6.js",
+    "main.js": "/portfolio/static/js/main.1f1f1f31.js",
     "static/js/453.6a2b70d3.chunk.js": "/portfolio/static/js/453.6a2b70d3.chunk.js",
     "static/media/logo.png": "/portfolio/static/media/logo.e501e4e2a5e031681812.png",
     "static/media/meta.png": "/portfolio/static/media/meta.9421253b292740c7effb.png",
@@ -12,18 +12,18 @@
     "static/media/cert13.jpg": "/portfolio/static/media/cert13.7736e9d0efe7fb4cb41b.jpg",
     "static/media/cert1.png": "/portfolio/static/media/cert1.5eba50abe73f8298aa6a.png",
     "static/media/oracle_cert.jpg": "/portfolio/static/media/oracle_cert.255deef61ab5ad80226a.jpg",
-    "static/media/Dhammapal_Suradkar_React_FullStack_Developer_Resume.pdf": "/portfolio/static/media/Dhammapal_Suradkar_React_FullStack_Developer_Resume.859d51f7acf9269aaf43.pdf",
+    "static/media/Dhammapal_Suradkar_React_FullStack_Developer_Resume.pdf": "/portfolio/static/media/Dhammapal_Suradkar_React_FullStack_Developer_Resume.a2acac2539b1aafdb946.pdf",
     "static/media/cert15.jpg": "/portfolio/static/media/cert15.df3e1d7c4c2545533fa8.jpg",
     "static/media/cert14.png": "/portfolio/static/media/cert14.1046bd14799ad40c65b5.png",
     "static/media/404-page.png": "/portfolio/static/media/404-page.5e5bc3363c5b2deac497.png",
     "static/media/my_photo.JPG": "/portfolio/static/media/my_photo.2c8babbd314b9e48ffb1.JPG",
     "index.html": "/portfolio/index.html",
     "main.9337c093.css.map": "/portfolio/static/css/main.9337c093.css.map",
-    "main.8c656ea6.js.map": "/portfolio/static/js/main.8c656ea6.js.map",
+    "main.1f1f1f31.js.map": "/portfolio/static/js/main.1f1f1f31.js.map",
     "453.6a2b70d3.chunk.js.map": "/portfolio/static/js/453.6a2b70d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9337c093.css",
-    "static/js/main.8c656ea6.js"
+    "static/js/main.1f1f1f31.js"
   ]
 }
