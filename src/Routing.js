@@ -6,7 +6,7 @@ import PageNotFound from "./pages/PageNotFound";
 
 const Routing = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
