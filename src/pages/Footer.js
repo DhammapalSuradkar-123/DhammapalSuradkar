@@ -6,38 +6,59 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
 const Footer = () => {
   return (
     <div className="main-container footer-banner-wrapper" id="contact">
       <footer className="footer-bar">
+        {/* Arrow/Chevron avatar badge on the left */}
+        <div className="footer-avatar-badge">
+          <AccountCircleOutlinedIcon style={{ fontSize: 28, color: "#ffffff" }} />
+        </div>
+
+        {/* Contact info cards */}
         <div className="footer-contacts">
           <div className="footer-contact-item">
-            <LocationOnOutlinedIcon
-              style={{ fontSize: 18, color: "#475569" }}
-            />
-            <span>Buldhana, Maharashtra, India</span>
+            <div className="footer-contact-icon location">
+              <LocationOnOutlinedIcon style={{ fontSize: 20 }} />
+            </div>
+            <div className="footer-contact-text">
+              <span className="footer-contact-label">LOCATION</span>
+              <span className="footer-contact-value">Buldhana, Maharashtra, India</span>
+            </div>
           </div>
+
           <a
             href="mailto:dsuradkar111@gmail.com"
             className="footer-contact-item"
             style={{ textDecoration: "none" }}
           >
-            <EmailOutlinedIcon style={{ fontSize: 18, color: "#475569" }} />
-            <span>dsuradkar111@gmail.com</span>
+            <div className="footer-contact-icon email">
+              <EmailOutlinedIcon style={{ fontSize: 20 }} />
+            </div>
+            <div className="footer-contact-text">
+              <span className="footer-contact-label">EMAIL</span>
+              <span className="footer-contact-value">dsuradkar111@gmail.com</span>
+            </div>
           </a>
+
           <a
             href="tel:+919657531971"
             className="footer-contact-item"
             style={{ textDecoration: "none" }}
           >
-            <LocalPhoneOutlinedIcon
-              style={{ fontSize: 18, color: "#475569" }}
-            />
-            <span>+91 9657531971</span>
+            <div className="footer-contact-icon phone">
+              <LocalPhoneOutlinedIcon style={{ fontSize: 20 }} />
+            </div>
+            <div className="footer-contact-text">
+              <span className="footer-contact-label">PHONE</span>
+              <span className="footer-contact-value">+91 9657531971</span>
+            </div>
           </a>
         </div>
 
+        {/* Social links */}
         <div className="footer-socials">
           <a
             href="https://github.com/DhammapalSuradkar-123"
